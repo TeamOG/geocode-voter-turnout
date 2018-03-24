@@ -34,3 +34,12 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+.homeWelcome {
+  margin: 20px;
+  text-align: left;
+}
+
+body {
+  background-color: beige
+}
