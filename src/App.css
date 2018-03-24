@@ -28,7 +28,7 @@
 }
 
 .homePhoto {
-  background-image: url('splashphoto.jpg');
+  background-image: url('assets/images/splashphoto.jpg');
   background-size: contain;
   position: relative;
   width: 100%;

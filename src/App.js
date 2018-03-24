@@ -4,9 +4,11 @@ import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import './App.css';
-import Home from './home';
-import Map from './Map';
-import Report from './report';
+
+// Views
+import Home from './views/Home';
+import Map from './views/Map';
+import Report from './views/Report';
 
 
 //This is start of our application. All of the routes will extend from here.
@@ -18,7 +20,6 @@ class App extends Component {
 
   render() {
     return (
-
       <BrowserRouter>
         <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
           <div className="App">

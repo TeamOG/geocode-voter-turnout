@@ -1,5 +1,5 @@
 import React from 'react';
-import TopBar from './components/appbar';
+import TopBar from '../components/TopBar';
 
 class Map extends React.Component {
     render() {
