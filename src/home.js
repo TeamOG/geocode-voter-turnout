@@ -1,5 +1,6 @@
 import React from 'react';
 import TopBar from './components/appbar';
+import splashPhoto from './splashphoto.jpg';
 
 class Home extends React.Component {
     render() {
@@ -7,6 +8,7 @@ class Home extends React.Component {
             <div className="Home">
             <TopBar />
                 <h1>Home</h1>
+                <img class="splashphoto"  src={splashPhoto} alt="splash Photo" />
             </div>
         )
     }
