@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Home from './home';
 
 
 //This is start of our application. All of the routes will extend from here.
@@ -8,11 +9,11 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <div className="App">
-      <Switch>
-      <Route exact path="/" component={Home} />
-        </Switch>
-      </div>
+        <div className="App">
+          <Switch>
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </div>
       </BrowserRouter>
     );
   }
