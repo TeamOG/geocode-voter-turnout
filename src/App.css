@@ -27,12 +27,15 @@
   to { transform: rotate(360deg); }
 }
 
-.splashphoto {
+.homePhoto {
+  background-image: url('splashphoto.jpg');
+  background-size: contain;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100px;
   background-position: center center;
   background-repeat: no-repeat;
+  
 }
 
 .homeWelcome {
@@ -43,3 +46,4 @@
 body {
   background-color: beige
 }
+
