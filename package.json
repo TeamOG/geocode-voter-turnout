@@ -2,6 +2,7 @@
   "name": "geocode-voter-turnout",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://teamog.github.io/geocode-voter-turnout/",
   "dependencies": {
     "@google-cloud/bigquery": "^1.0.0",
     "googleapis": "^27.0.0",
