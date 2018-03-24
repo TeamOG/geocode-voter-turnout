@@ -5,12 +5,17 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import './App.css';
 import Home from './home';
-import Map from './map';
+import Map from './Map';
 import Report from './report';
 
 
 //This is start of our application. All of the routes will extend from here.
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+  }
+
   render() {
     return (
 
