@@ -2,6 +2,8 @@ import React from 'react';
 import TopBar from '../components/TopBar';
 import 'react-table/react-table.css'
 import ReactTable from 'react-table';
+
+import BarChart from '../components/BarChart';
 import { countyCountsData } from '../data/OG_CountySubdivision_counts';
 import { countyAgeData } from '../data/OG_CountySubdivision_by_Age';
 import { countyHHData } from '../data/OG_CountySubdivision_by_Household';
@@ -151,6 +153,9 @@ class Report extends React.Component {
                     </div>
                     <div className="row mt-4">
                         {this.renderReactTable()}
+                    </div>
+                    <div className="row mt-4">
+                        <BarChart data={[5,10,1,3]} size={[500,500]} />
                     </div>
                 </div>
             </div>
