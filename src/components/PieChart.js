@@ -47,4 +47,4 @@ class BarChart extends Component {
         </svg>
     }
 }
-export default BarChart
+export default PieChart

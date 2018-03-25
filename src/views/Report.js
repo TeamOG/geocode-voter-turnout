@@ -15,8 +15,8 @@ class Report extends React.Component {
 
         const countyCounts = {
             columns: [{ Header: 'State', accessor: 'st' },
-                { Header: 'County', accessor: 'cnty', Cell: props => <a href="#" onClick={this.retrieveData.bind(this, props.value)}>{props.value}</a>},
-                { Header: 'Subdivision', accessor: 'sub_division' },
+                { Header: 'County', accessor: 'cnty', Cell: props => <a href="#" onClick={this.retrieveData.bind(this, props.value)}>{props.value}</a>, filterable: true},
+                { Header: 'Subdivision', accessor: 'sub_division', filterable: true },
                 { Header: 'Eligible Voters', accessor: 'eligible_voters' },
                 { Header: 'Registered Voters', accessor: 'registered_voters' },
                 { Header: 'Number of Votes', accessor: 'number_of_votes' },
@@ -25,13 +25,14 @@ class Report extends React.Component {
                 { Header: 'Year', accessor: 'Year' }],
             data: countyCountsData,
             friendly_name: 'County/Subdivision Vote Counts',
-            slug: 'vote-counts'
+            slug: 'vote-counts',
+            charts: { barChart: 'eligible_voters, registered_voters, number_of_votes' }
         };
 
         const countyAge = {
             columns: [{Header: 'State', accessor: 'st'},
-                {Header: 'County', accessor: 'cnty', Cell: props => <a href="#" onClick={this.retrieveData.bind(this, props.value)}>{props.value}</a>},
-                {Header: 'Subdivision', accessor: 'sub_division'},
+                {Header: 'County', accessor: 'cnty', Cell: props => <a href="#" onClick={this.retrieveData.bind(this, props.value)}>{props.value}</a>, filterable: true},
+                {Header: 'Subdivision', accessor: 'sub_division', filterable: true},
                 {Header: 'Total Population', accessor: 'tot_pop'},
                 {Header: '0-15', accessor: 'between0_to_15_pop'},
                 {Header: '15-25', accessor: 'between15_to_25_pop'},
@@ -46,8 +47,8 @@ class Report extends React.Component {
 
         const countyHH = {
             columns: [{Header: 'State', accessor: 'st'},
-                {Header: 'County', accessor: 'cnty', Cell: props => <a href="#" onClick={this.retrieveData.bind(this, props.value)}>{props.value}</a>},
-                {Header: 'Subdivision', accessor: 'sub_division'},
+                {Header: 'County', accessor: 'cnty', Cell: props => <a href="#" onClick={this.retrieveData.bind(this, props.value)}>{props.value}</a>, filterable: true},
+                {Header: 'Subdivision', accessor: 'sub_division', filterable: true},
                 {Header: 'Total Household', accessor: 'tot_household'},
                 {Header: '18 & under', accessor: 'household_18underkid'},
                 {Header: 'Household Married Couple', accessor: 'household_marriedcouple'},
@@ -66,8 +67,8 @@ class Report extends React.Component {
 
         const countyRace = {
             columns: [{Header: 'State', accessor: 'State'},
-                {Header: 'County', accessor: 'County', Cell: props => <a href="#" onClick={this.retrieveData.bind(this, props.value)}>{props.value}</a>},
-                {Header: 'Subdivision', accessor: 'City'},
+                {Header: 'County', accessor: 'County', Cell: props => <a href="#" onClick={this.retrieveData.bind(this, props.value)}>{props.value}</a>, filterable: true},
+                {Header: 'Subdivision', accessor: 'City', filterable: true},
                 {Header: 'Total Population', accessor: 'Est_RACE_Total_population'},
                 {Header: 'White', accessor: 'Est_RACE_One_race_White'},
                 {Header: 'Black/African American', accessor: 'Est_RACE_One_race_Black_or_African_American'},
@@ -80,6 +81,8 @@ class Report extends React.Component {
             friendly_name: 'County/Subdivision Race by Population',
             slug: 'race'
         };
+
+
 
         this.state = { data: {countyCounts: countyCounts, countyAge: countyAge, countyHH: countyHH, countyRace: countyRace}, selected: '', selected_report: '' }
     }
@@ -98,7 +101,6 @@ class Report extends React.Component {
                 columns={this.state.data[this.state.selected_report].columns}
                 data={this.state.data[this.state.selected_report].data}
                 defaultPageSize={10}
-                filterable={true}
                 defaultFilterMethod={(filter, row, column) => {
                     const id = filter.pivotId || filter.id
                     return row[id] !== undefined ? String(row[id]).toLowerCase().startsWith(filter.value.toLowerCase()) : true
@@ -133,6 +135,13 @@ class Report extends React.Component {
         this.setState({selected_report: report});
     }
 
+
+    getTotalCountsForData(selected_report) {
+        if (this.state.data[this.state.selected_report].charts.barChart != '') {
+            //<BarChart data={[]} size={[500,500]} />
+        }
+    }
+
     render() {
         return (
             <div className="Report">
@@ -155,7 +164,7 @@ class Report extends React.Component {
                         {this.renderReactTable()}
                     </div>
                     <div className="row mt-4">
-                        <BarChart data={[5,10,1,3]} size={[500,500]} />
+                        { this.getTotalCountsForData.bind(this, this.state.selected_report) }
                     </div>
                 </div>
             </div>
