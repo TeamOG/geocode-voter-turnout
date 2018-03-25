@@ -27,23 +27,29 @@
   to { transform: rotate(360deg); }
 }
 
-.homePhoto {
-  background-image: url('assets/images/splashphoto.jpg');
-  background-size: contain;
+.splashphoto {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 30%;
   background-position: center center;
   background-repeat: no-repeat;
-  
 }
 
-.homeWelcome {
-  margin: 20px;
-  text-align: left;
+.woman {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* padding-top: 8rem; */
+  padding-bottom: 8rem;
+  background-repeat: no-repeat;
+  background-size: cover
 }
-
-body {
-  background-color: beige
+.logo{
+  position: absolute;
+  width: 650px;
+  height: 380px;
+  top: 100px;
+  left: 100px;
 }
-

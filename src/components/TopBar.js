@@ -30,11 +30,16 @@ this.state = {
     redirectToGoogle() {
         window.location.assign('https://datastudio.google.com/reporting/1ypN34cY7_XQMeLliYK39HzvfWLeDlSBI/page/ULWP');
     }
+
+    redirectToGitHub() {
+        window.location.assign('https://github.com/TeamOG');
+    }
+
     render() {
         return (
             <div>
                 <AppBar
-                    title="The O.G. Voter Turnout App"
+                    title=""
                     iconClassNameRight="muidocs-icon-navigation-expand-more"
                     onLeftIconButtonClick={this.handleMenuToggleToggle}
                 />
@@ -44,6 +49,7 @@ this.state = {
                     <MenuItem onClick={this.redirectPage.bind(this, 'map')}>Map</MenuItem>
                     <MenuItem onClick={this.redirectPage.bind(this, 'data')}>Data</MenuItem>
                     <MenuItem onClick={this.redirectToGoogle.bind(this)}>Google Reports</MenuItem>
+                    <MenuItem onClick={this.redirectToGitHub.bind(this)}>GitHub</MenuItem>
                 </Drawer>
             </div>
 
