@@ -8,9 +8,12 @@
     "googleapis": "^27.0.0",
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
+    "react-d3-map": "^0.8.3",
+    "react-d3-map-choropleth": "^0.5.1",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "react-table": "^6.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
