@@ -27,12 +27,14 @@ this.state = {
         window.location.assign(`/${loc}`)
     };
 
-
+    redirectToGoogle() {
+        window.location.assign('https://datastudio.google.com/reporting/1ypN34cY7_XQMeLliYK39HzvfWLeDlSBI/page/ULWP');
+    }
     render() {
         return (
             <div>
                 <AppBar
-                    title="The O.G. Voter Data App"
+                    title="The O.G. Voter Turnout App"
                     iconClassNameRight="muidocs-icon-navigation-expand-more"
                     onLeftIconButtonClick={this.handleMenuToggleToggle}
                 />
@@ -40,7 +42,8 @@ this.state = {
                 <Drawer open={this.state.open} docked={false} onRequestChange={this.closeDrawer}>
                     <MenuItem onClick={this.redirectPage.bind(this, '')}>Home</MenuItem>
                     <MenuItem onClick={this.redirectPage.bind(this, 'map')}>Map</MenuItem>
-                    <MenuItem onClick={this.redirectPage.bind(this, 'reports')}>Reports</MenuItem>
+                    <MenuItem onClick={this.redirectPage.bind(this, 'data')}>Data</MenuItem>
+                    <MenuItem onClick={this.redirectToGoogle.bind(this)}>Google Reports</MenuItem>
                 </Drawer>
             </div>
 

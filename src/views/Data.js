@@ -149,7 +149,7 @@ class Report extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12">
-                            <h1>Reports</h1>
+                            <h1>Data</h1>
                         </div>
                     </div>
                     <div className="row">

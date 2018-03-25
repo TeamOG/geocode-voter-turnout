@@ -8,7 +8,7 @@ import './App.css';
 // Views
 import Home from './views/Home';
 import Map from './views/Map';
-import Report from './views/Report';
+import Data from './views/Data';
 
 
 //This is start of our application. All of the routes will extend from here.
@@ -26,7 +26,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/map" component={Map} />
-              <Route exact path="/reports" component={Report} />
+              <Route exact path="/data" component={Data} />
             </Switch>
           </div>
         </MuiThemeProvider>
