@@ -5,6 +5,7 @@ import ReactTable from 'react-table';
 import { countyCountsData } from '../data/OG_CountySubdivision_counts';
 import { countyAgeData } from '../data/OG_CountySubdivision_by_Age';
 import { countyHHData } from '../data/OG_CountySubdivision_by_Household';
+import { countyRaceData } from '../data/OG_CountySubdivision_by_race';
 
 class Report extends React.Component {
     constructor(props) {
@@ -46,7 +47,7 @@ class Report extends React.Component {
                 {Header: 'County', accessor: 'cnty', Cell: props => <a href="#" onClick={this.retrieveData.bind(this, props.value)}>{props.value}</a>},
                 {Header: 'Subdivision', accessor: 'sub_division'},
                 {Header: 'Total Household', accessor: 'tot_household'},
-                {Header: 'Household 18 & under', accessor: 'household_18underkid'},
+                {Header: '18 & under', accessor: 'household_18underkid'},
                 {Header: 'Household Married Couple', accessor: 'household_marriedcouple'},
                 {Header: 'Household Nonfamily', accessor: 'household_nonfamily'},
                 {Header: 'Household Average Size', accessor: 'household_avgsize'},
@@ -61,7 +62,24 @@ class Report extends React.Component {
             slug: 'households'
         };
 
-        this.state = { data: {countyCounts: countyCounts, countyAge: countyAge, countyHH: countyHH}, selected: '', selected_report: '' }
+        const countyRace = {
+            columns: [{Header: 'State', accessor: 'State'},
+                {Header: 'County', accessor: 'County', Cell: props => <a href="#" onClick={this.retrieveData.bind(this, props.value)}>{props.value}</a>},
+                {Header: 'Subdivision', accessor: 'City'},
+                {Header: 'Total Population', accessor: 'Est_RACE_Total_population'},
+                {Header: 'White', accessor: 'Est_RACE_One_race_White'},
+                {Header: 'Black/African American', accessor: 'Est_RACE_One_race_Black_or_African_American'},
+                {Header: 'American Indian/Alaska Native', accessor: 'Est_RACE_One_race_American_Indian_and_Alaska_Native'},
+                {Header: 'Asian', accessor: 'Est_RACE_One_race_Asian'},
+                {Header: 'Native Hawaiian/Other Pacific Islander', accessor: 'Est_RACE_One_race_Native_Hawaiian_and_Other_Pacific_Islander'},
+                {Header: 'Other', accessor: 'Est_RACE_One_race_Some_other_race'},
+                {Header: 'Two or more races', accessor: 'Est_RACE_Total_population_Two_or_more_races'}],
+            data: countyRaceData,
+            friendly_name: 'County/Subdivision Race by Population',
+            slug: 'race'
+        };
+
+        this.state = { data: {countyCounts: countyCounts, countyAge: countyAge, countyHH: countyHH, countyRace: countyRace}, selected: '', selected_report: '' }
     }
 
     retrieveData(val, e) {
@@ -82,6 +100,28 @@ class Report extends React.Component {
                 defaultFilterMethod={(filter, row, column) => {
                     const id = filter.pivotId || filter.id
                     return row[id] !== undefined ? String(row[id]).toLowerCase().startsWith(filter.value.toLowerCase()) : true
+                }}
+                defaultSortMethod={(a, b, desc) => {
+                    // force null and undefined to the bottom
+                    a = (a === null || a === undefined) ? -Infinity : a
+                    b = (b === null || b === undefined) ? -Infinity : b
+                    // force any string values to lowercase
+                    if (parseInt(a) === NaN || parseInt(b) === NaN) {
+                        a = a === 'string' ? a.toLowerCase() : a
+                        b = b === 'string' ? b.toLowerCase() : b
+                    } else {
+                        a = parseInt(a);
+                        b = parseInt(b);
+                    }
+                    // Return either 1 or -1 to indicate a sort priority
+                    if (a > b) {
+                        return 1
+                    }
+                    if (a < b) {
+                        return -1
+                    }
+                // returning 0, undefined or any falsey value will use subsequent sorts or the index as a tiebreaker
+                return 0
                 }}
             />
         }
@@ -104,6 +144,7 @@ class Report extends React.Component {
                     <div className="row">
                         <div className="col-sm-12">
                             <button type="button" className="btn btn-info mr-2" onClick={this.handleReport.bind(this, 'countyCounts')}>Vote Counts</button>
+                            <button type="button" className="btn btn-info mr-2" onClick={this.handleReport.bind(this, 'countyRace')}>Race</button>
                             <button type="button" className="btn btn-info mr-2" onClick={this.handleReport.bind(this, 'countyAge')}>Age Counts</button>
                             <button type="button" className="btn btn-info mr-2" onClick={this.handleReport.bind(this, 'countyHH')}>Household</button>
                         </div>
