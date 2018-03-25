@@ -258,11 +258,11 @@ asap@~2.0.3:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
 
-asn1.js@^4.0.0:
+asn1OG_CountySubdivision_by_Household.js@^4.0.0:
   version "4.10.1"
-  resolved "https://registry.yarnpkg.com/asn1.js/-/asn1.js-4.10.1.tgz#b9c2bf5805f1e64aadeed6df3a2bfafb5a73f5a0"
+  resolved "https://registry.yarnpkg.com/asn1OG_CountySubdivision_by_Household.js/-/asn1OG_CountySubdivision_by_Household.js-4.10.1.tgz#b9c2bf5805f1e64aadeed6df3a2bfafb5a73f5a0"
   dependencies:
-    bn.js "^4.0.0"
+    bnOG_CountySubdivision_by_Household.js "^4.0.0"
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
@@ -1023,9 +1023,9 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-big.js@^3.1.3:
+bigOG_CountySubdivision_by_Household.js@^3.1.3:
   version "3.2.0"
-  resolved "https://registry.yarnpkg.com/big.js/-/big.js-3.2.0.tgz#a5fc298b81b9e0dca2e458824784b65c52ba588e"
+  resolved "https://registry.yarnpkg.com/bigOG_CountySubdivision_by_Household.js/-/bigOG_CountySubdivision_by_Household.js-3.2.0.tgz#a5fc298b81b9e0dca2e458824784b65c52ba588e"
 
 binary-extensions@^1.0.0:
   version "1.11.0"
@@ -1041,9 +1041,9 @@ bluebird@^3.4.7:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
 
-bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
+bnOG_CountySubdivision_by_Household.js@^4.0.0, bnOG_CountySubdivision_by_Household.js@^4.1.0, bnOG_CountySubdivision_by_Household.js@^4.1.1, bnOG_CountySubdivision_by_Household.js@^4.4.0:
   version "4.11.8"
-  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
+  resolved "https://registry.yarnpkg.com/bnOG_CountySubdivision_by_Household.js/-/bnOG_CountySubdivision_by_Household.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
 
 body-parser@1.18.2:
   version "1.18.2"
@@ -1171,21 +1171,21 @@ browserify-des@^1.0.0:
   resolved "https://registry.yarnpkg.com/browserify-des/-/browserify-des-1.0.0.tgz#daa277717470922ed2fe18594118a175439721dd"
   dependencies:
     cipher-base "^1.0.1"
-    des.js "^1.0.0"
+    desOG_CountySubdivision_by_Household.js "^1.0.0"
     inherits "^2.0.1"
 
 browserify-rsa@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/browserify-rsa/-/browserify-rsa-4.0.1.tgz#21e0abfaf6f2029cf2fafb133567a701d4135524"
   dependencies:
-    bn.js "^4.1.0"
+    bnOG_CountySubdivision_by_Household.js "^4.1.0"
     randombytes "^2.0.1"
 
 browserify-sign@^4.0.0:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/browserify-sign/-/browserify-sign-4.0.4.tgz#aa4eb68e5d7b658baa6bf6a57e630cbd7a93d298"
   dependencies:
-    bn.js "^4.1.1"
+    bnOG_CountySubdivision_by_Household.js "^4.1.1"
     browserify-rsa "^4.0.0"
     create-hash "^1.1.0"
     create-hmac "^1.1.2"
@@ -1675,7 +1675,7 @@ create-ecdh@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/create-ecdh/-/create-ecdh-4.0.0.tgz#888c723596cdf7612f6498233eebd7a35301737d"
   dependencies:
-    bn.js "^4.1.0"
+    bnOG_CountySubdivision_by_Household.js "^4.1.0"
     elliptic "^6.0.0"
 
 create-error-class@^3.0.0:
@@ -1691,7 +1691,7 @@ create-hash@^1.1.0, create-hash@^1.1.2:
     cipher-base "^1.0.1"
     inherits "^2.0.1"
     ripemd160 "^2.0.0"
-    sha.js "^2.4.0"
+    shaOG_CountySubdivision_by_Household.js "^2.4.0"
 
 create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
   version "1.1.6"
@@ -1702,7 +1702,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     inherits "^2.0.1"
     ripemd160 "^2.0.0"
     safe-buffer "^5.0.1"
-    sha.js "^2.4.8"
+    shaOG_CountySubdivision_by_Household.js "^2.4.8"
 
 cross-spawn@5.1.0, cross-spawn@^5.0.1, cross-spawn@^5.1.0:
   version "5.1.0"
@@ -1979,9 +1979,9 @@ depd@~1.1.1, depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
 
-des.js@^1.0.0:
+desOG_CountySubdivision_by_Household.js@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/des.js/-/des.js-1.0.0.tgz#c074d2e2aa6a8a9a07dbd61f9a15c2cd83ec8ecc"
+  resolved "https://registry.yarnpkg.com/desOG_CountySubdivision_by_Household.js/-/desOG_CountySubdivision_by_Household.js-1.0.0.tgz#c074d2e2aa6a8a9a07dbd61f9a15c2cd83ec8ecc"
   dependencies:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
@@ -2019,7 +2019,7 @@ diffie-hellman@^5.0.0:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/diffie-hellman/-/diffie-hellman-5.0.2.tgz#b5835739270cfe26acf632099fded2a07f209e5e"
   dependencies:
-    bn.js "^4.1.0"
+    bnOG_CountySubdivision_by_Household.js "^4.1.0"
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
@@ -2143,9 +2143,9 @@ elliptic@^6.0.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.4.0.tgz#cac9af8762c85836187003c8dfe193e5e2eae5df"
   dependencies:
-    bn.js "^4.4.0"
+    bnOG_CountySubdivision_by_Household.js "^4.4.0"
     brorand "^1.0.1"
-    hash.js "^1.0.0"
+    hashOG_CountySubdivision_by_Household.js "^1.0.0"
     hmac-drbg "^1.0.0"
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
@@ -2484,7 +2484,7 @@ evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/evp_bytestokey/-/evp_bytestokey-1.0.3.tgz#7fcbdb198dc71959432efe13842684e0525acb02"
   dependencies:
-    md5.js "^1.3.4"
+    md5OG_CountySubdivision_by_Household.js "^1.3.4"
     safe-buffer "^5.1.1"
 
 exec-sh@^0.2.0:
@@ -3142,9 +3142,9 @@ hash-base@^3.0.0:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-hash.js@^1.0.0, hash.js@^1.0.3:
+hashOG_CountySubdivision_by_Household.js@^1.0.0, hashOG_CountySubdivision_by_Household.js@^1.0.3:
   version "1.1.3"
-  resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.3.tgz#340dedbe6290187151c1ea1d777a3448935df846"
+  resolved "https://registry.yarnpkg.com/hashOG_CountySubdivision_by_Household.js/-/hashOG_CountySubdivision_by_Household.js-1.1.3.tgz#340dedbe6290187151c1ea1d777a3448935df846"
   dependencies:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.0"
@@ -3175,7 +3175,7 @@ hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
   dependencies:
-    hash.js "^1.0.3"
+    hashOG_CountySubdivision_by_Household.js "^1.0.3"
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
@@ -3204,9 +3204,9 @@ hosted-git-info@^2.1.4:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.6.0.tgz#23235b29ab230c576aab0d4f13fc046b0b038222"
 
-hpack.js@^2.1.6:
+hpackOG_CountySubdivision_by_Household.js@^2.1.6:
   version "2.1.6"
-  resolved "https://registry.yarnpkg.com/hpack.js/-/hpack.js-2.1.6.tgz#87774c0949e513f42e84575b3c45681fade2a0b2"
+  resolved "https://registry.yarnpkg.com/hpackOG_CountySubdivision_by_Household.js/-/hpackOG_CountySubdivision_by_Household.js-2.1.6.tgz#87774c0949e513f42e84575b3c45681fade2a0b2"
   dependencies:
     inherits "^2.0.1"
     obuf "^1.0.0"
@@ -3426,9 +3426,9 @@ ip@^1.1.0, ip@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
 
-ipaddr.js@1.6.0:
+ipaddrOG_CountySubdivision_by_Household.js@1.6.0:
   version "1.6.0"
-  resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.6.0.tgz#e3fa357b773da619f26e95f049d055c72796f86b"
+  resolved "https://registry.yarnpkg.com/ipaddrOG_CountySubdivision_by_Household.js/-/ipaddrOG_CountySubdivision_by_Household.js-1.6.0.tgz#e3fa357b773da619f26e95f049d055c72796f86b"
 
 is-absolute-url@^2.0.0:
   version "2.1.0"
@@ -4233,7 +4233,7 @@ loader-utils@^0.2.16:
   version "0.2.17"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-0.2.17.tgz#f86e6374d43205a6e6c60e9196f17c0299bfb348"
   dependencies:
-    big.js "^3.1.3"
+    bigOG_CountySubdivision_by_Household.js "^3.1.3"
     emojis-list "^2.0.0"
     json5 "^0.5.0"
     object-assign "^4.0.1"
@@ -4242,7 +4242,7 @@ loader-utils@^1.0.2, loader-utils@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
   dependencies:
-    big.js "^3.1.3"
+    bigOG_CountySubdivision_by_Household.js "^3.1.3"
     emojis-list "^2.0.0"
     json5 "^0.5.0"
 
@@ -4364,9 +4364,9 @@ math-expression-evaluator@^1.2.14:
   version "1.2.17"
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
 
-md5.js@^1.3.4:
+md5OG_CountySubdivision_by_Household.js@^1.3.4:
   version "1.3.4"
-  resolved "https://registry.yarnpkg.com/md5.js/-/md5.js-1.3.4.tgz#e9bdbde94a20a5ac18b04340fc5764d5b09d901d"
+  resolved "https://registry.yarnpkg.com/md5OG_CountySubdivision_by_Household.js/-/md5OG_CountySubdivision_by_Household.js-1.3.4.tgz#e9bdbde94a20a5ac18b04340fc5764d5b09d901d"
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
@@ -4455,7 +4455,7 @@ miller-rabin@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/miller-rabin/-/miller-rabin-4.0.1.tgz#f080351c865b0dc562a8462966daa53543c78a4d"
   dependencies:
-    bn.js "^4.0.0"
+    bnOG_CountySubdivision_by_Household.js "^4.0.0"
     brorand "^1.0.1"
 
 "mime-db@>= 1.33.0 < 2", mime-db@~1.33.0:
@@ -4914,7 +4914,7 @@ parse-asn1@^5.0.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/parse-asn1/-/parse-asn1-5.1.0.tgz#37c4f9b7ed3ab65c74817b5f2480937fbf97c712"
   dependencies:
-    asn1.js "^4.0.0"
+    asn1OG_CountySubdivision_by_Household.js "^4.0.0"
     browserify-aes "^1.0.0"
     create-hash "^1.1.0"
     evp_bytestokey "^1.0.0"
@@ -5017,7 +5017,7 @@ pbkdf2@^3.0.3:
     create-hmac "^1.1.4"
     ripemd160 "^2.0.1"
     safe-buffer "^5.0.1"
-    sha.js "^2.4.8"
+    shaOG_CountySubdivision_by_Household.js "^2.4.8"
 
 performance-now@^0.2.0:
   version "0.2.0"
@@ -5428,7 +5428,7 @@ proxy-addr@~2.0.3:
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.3.tgz#355f262505a621646b3130a728eb647e22055341"
   dependencies:
     forwarded "~0.1.2"
-    ipaddr.js "1.6.0"
+    ipaddrOG_CountySubdivision_by_Household.js "1.6.0"
 
 prr@~1.0.1:
   version "1.0.1"
@@ -5442,7 +5442,7 @@ public-encrypt@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/public-encrypt/-/public-encrypt-4.0.0.tgz#39f699f3a46560dd5ebacbca693caf7c65c18cc6"
   dependencies:
-    bn.js "^4.1.0"
+    bnOG_CountySubdivision_by_Household.js "^4.1.0"
     browserify-rsa "^4.0.0"
     create-hash "^1.1.0"
     parse-asn1 "^5.0.0"
@@ -6106,9 +6106,9 @@ setprototypeof@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.1.0.tgz#d0bd85536887b6fe7c0d818cb962d9d91c54e656"
 
-sha.js@^2.4.0, sha.js@^2.4.8:
+shaOG_CountySubdivision_by_Household.js@^2.4.0, shaOG_CountySubdivision_by_Household.js@^2.4.8:
   version "2.4.11"
-  resolved "https://registry.yarnpkg.com/sha.js/-/sha.js-2.4.11.tgz#37a5cf0b81ecbc6943de109ba2960d1b26584ae7"
+  resolved "https://registry.yarnpkg.com/shaOG_CountySubdivision_by_Household.js/-/shaOG_CountySubdivision_by_Household.js-2.4.11.tgz#37a5cf0b81ecbc6943de109ba2960d1b26584ae7"
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
@@ -6279,7 +6279,7 @@ spdy-transport@^2.0.18:
   dependencies:
     debug "^2.6.8"
     detect-node "^2.0.3"
-    hpack.js "^2.1.6"
+    hpackOG_CountySubdivision_by_Household.js "^2.1.6"
     obuf "^1.1.1"
     readable-stream "^2.2.9"
     safe-buffer "^5.0.1"

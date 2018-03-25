@@ -4,6 +4,7 @@ import 'react-table/react-table.css'
 import ReactTable from 'react-table';
 import { countyCountsData } from '../data/OG_CountySubdivision_counts';
 import { countyAgeData } from '../data/OG_CountySubdivision_by_Age';
+import { countyHHData } from '../data/OG_CountySubdivision_by_Household';
 
 class Report extends React.Component {
     constructor(props) {
@@ -40,7 +41,27 @@ class Report extends React.Component {
             slug: 'age-totals'
         };
 
-        this.state = { data: {countyCounts: countyCounts, countyAge: countyAge}, selected: '', selected_report: '' }
+        const countyHH = {
+            columns: [{Header: 'State', accessor: 'st'},
+                {Header: 'County', accessor: 'cnty', Cell: props => <a href="#" onClick={this.retrieveData.bind(this, props.value)}>{props.value}</a>},
+                {Header: 'Subdivision', accessor: 'sub_division'},
+                {Header: 'Total Household', accessor: 'tot_household'},
+                {Header: 'Household 18 & under', accessor: 'household_18underkid'},
+                {Header: 'Household Married Couple', accessor: 'household_marriedcouple'},
+                {Header: 'Household Nonfamily', accessor: 'household_nonfamily'},
+                {Header: 'Household Average Size', accessor: 'household_avgsize'},
+                {Header: 'Population Kids 3 & above', accessor: 'population_kids3above_school'},
+                {Header: 'Population Kids Kindergarden', accessor: 'population_kidsgrade1_8'},
+                {Header: 'Population Kids Grades 1-8', accessor: 'population_kidsgrade1_8'},
+                {Header: 'Population Kids 9-12', accessor: 'population_kidsgrade9_12'},
+                {Header: 'Population Kids College Graduate', accessor: 'population_collegegraduate'},
+                {Header: '85+', accessor: 'above85_pop'}],
+            data: countyHHData,
+            friendly_name: 'County/Subdivision Households',
+            slug: 'households'
+        };
+
+        this.state = { data: {countyCounts: countyCounts, countyAge: countyAge, countyHH: countyHH}, selected: '', selected_report: '' }
     }
 
     retrieveData(val, e) {
@@ -84,6 +105,7 @@ class Report extends React.Component {
                         <div className="col-sm-12">
                             <button type="button" className="btn btn-info mr-2" onClick={this.handleReport.bind(this, 'countyCounts')}>Vote Counts</button>
                             <button type="button" className="btn btn-info mr-2" onClick={this.handleReport.bind(this, 'countyAge')}>Age Counts</button>
+                            <button type="button" className="btn btn-info mr-2" onClick={this.handleReport.bind(this, 'countyHH')}>Household</button>
                         </div>
                     </div>
                     <div className="row mt-4">
