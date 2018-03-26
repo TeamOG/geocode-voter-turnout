@@ -17,7 +17,7 @@ class Home extends React.Component {
                     <img className="logo" src={logo} alt="OG logo" />
                 </div>
                 <div className="col-xs-12 homeWelcome">
-                    <p>This application was created as part of the Hennepin County Geo:Code 2018 hackathon. Click on the Map and Reports pages to check out detailed voter information data for the state of Minnesota in the past four statewide elections since 2010.</p>
+                    <p>This application was created as part of the Hennepin County Geo:Code 2018 hackathon. Click on the Map and Reports pages to check out detailed voter information data for the state of Minnesota from the 2016 statewide election.</p>
                 </div>
                 <div>
                     <section className="content-section" >
