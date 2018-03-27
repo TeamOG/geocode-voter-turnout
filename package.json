@@ -12,6 +12,7 @@
     "googleapis": "^27.0.0",
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-d3-map": "^0.8.3",
     "react-d3-map-choropleth": "^0.5.1",
     "react-dom": "^16.2.0",
