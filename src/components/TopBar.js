@@ -24,7 +24,7 @@ this.state = {
     closeDrawer = () => this.setState({ open: false });
 
     redirectPage(loc) {
-        window.location.assign(`${loc}`)
+        window.location.assign(`${process.env.PUBLIC_URL}${loc}`)
     };
 
     redirectToGoogle() {
@@ -45,9 +45,9 @@ this.state = {
                 />
             
                 <Drawer open={this.state.open} docked={false} onRequestChange={this.closeDrawer}>
-                    <MenuItem onClick={this.redirectPage.bind(this, '')}>Home</MenuItem>
-                    <MenuItem onClick={this.redirectPage.bind(this, 'map')}>Map</MenuItem>
-                    <MenuItem onClick={this.redirectPage.bind(this, 'data')}>Data</MenuItem>
+                    <MenuItem onClick={this.redirectPage.bind(this, '/')}>Home</MenuItem>
+                    <MenuItem onClick={this.redirectPage.bind(this, '/maps')}>Maps</MenuItem>
+                    <MenuItem onClick={this.redirectPage.bind(this, '/data')}>Data</MenuItem>
                     <MenuItem onClick={this.redirectToGoogle.bind(this)}>Google Reports</MenuItem>
                     <MenuItem onClick={this.redirectToGitHub.bind(this)}>GitHub</MenuItem>
                 </Drawer>

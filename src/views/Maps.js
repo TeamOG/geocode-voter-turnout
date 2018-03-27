@@ -3,7 +3,7 @@ import TopBar from '../components/TopBar';
 import MapChoropleth from 'react-d3-map-choropleth';
 import Iframe from 'react-iframe'
 
-class Map extends React.Component {
+class Maps extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -45,4 +45,4 @@ class Map extends React.Component {
     }
 }
 
-export default Map;
+export default Maps;

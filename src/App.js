@@ -7,7 +7,7 @@ import './App.css';
 
 // Views
 import Home from './views/Home';
-import Map from './views/Map';
+import Maps from './views/Maps';
 import Data from './views/Data';
 
 
@@ -25,7 +25,7 @@ class App extends Component {
           <div className="App">
             <Switch>
                     <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-                    <Route exact path={process.env.PUBLIC_URL + '/map'} component={Map} />
+                    <Route exact path={process.env.PUBLIC_URL + '/maps'} component={Maps} />
               <Route exact path={process.env.PUBLIC_URL + '/data'} component={Data} />
             </Switch>
           </div>
