@@ -24,9 +24,9 @@ class App extends Component {
         <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
           <div className="App">
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/map" component={Map} />
-              <Route exact path="/data" component={Data} />
+                    <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+                    <Route exact path={process.env.PUBLIC_URL + '/maps'} component={Map} />
+              <Route exact path={process.env.PUBLIC_URL + '/data'} component={Data} />
             </Switch>
           </div>
         </MuiThemeProvider>

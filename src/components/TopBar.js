@@ -24,7 +24,7 @@ this.state = {
     closeDrawer = () => this.setState({ open: false });
 
     redirectPage(loc) {
-        window.location.assign(`/${loc}`)
+        window.location.assign(`${process.env.PUBLIC_URL}/${loc}`)
     };
 
     redirectToGoogle() {
