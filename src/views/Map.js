@@ -9,7 +9,7 @@ class Map extends React.Component {
     }
 
     renderMap() {
-        const url = 'http://www.arcgis.com/apps/Embed/index.html?webmap=e78c718dfaf4459190fea1a021e3cd56&amp;extent=-94.1777,44.7743,-92.7413,45.25&home=true&zoom=true&previewImage=false&scale=true&legendlayers=true&disable_scroll=true&theme=light';
+        const url = '//www.arcgis.com/apps/Embed/index.html?webmap=e78c718dfaf4459190fea1a021e3cd56&amp;extent=-94.1777,44.7743,-92.7413,45.25&home=true&zoom=true&previewImage=false&scale=true&legendlayers=true&disable_scroll=true&theme=light';
         return (
             <div>
                 <div className="embed-container">
